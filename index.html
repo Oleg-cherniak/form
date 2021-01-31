@@ -5,40 +5,58 @@
     <title> Форма </title>
 </head>
 <body>
-    <form method="POST">  
-        <h1> Форма заполнения </h1>
-        <p style="text-align: left;" >
-        1.<strong>Имя</strong>    <input type="text" name="name"><br> 
-        2.<strong>Телефон </strong><input type="tel" name="phone"><br>
-        3.<strong>Email</strong>  <input type="email" name="email"> <br>
-        4.<strong>Пароль</strong>  <input type="password" name="password"> <br> 
-        5.<strong>Какую машину Вы предпочитаете?</strong> <br>
-        <select name="auto">
-            <option value="BMW">BMW</option>
-            <option value="Mercedes-Bens">Mercedes-Bens</option>
-            <option value="Audi">Audi</option>
-            <option value="Volkswagen">Volkswagen</option>
-            <option value="Peugeot">Peugeot</option>
-           </select><br>
-           <label for="volume"><strong>Объём :</strong> </label> <br>
-        <input list="volume-list" id="volume" name="volume">
-        <datalist id="volume-list">
-            <option value="2.0"></option>
-            <option value="3.0"></option>
-            <option value="4.0"></option>
-        </datalist> <br>
-        <strong>Диски будут : </strong> <br>
-        <input type="radio" name="size" value="R15"/> <i>R15</i><br>
-        <input type="radio" name="size" value="R16"> <i>R16</i> <br>
-        <input type="radio" name="size" value="R17"/> <i>R17 </i><br>
-        <input type="radio" name="size" value="R18"/> <i>R18 </i><br>
+    <h1> Форма заполнения </h1>
+    
+      <form method="POST">  
         
-        
-        6.<strong>Ваши пожелания :</strong> <textarea name="comments" placeholder="Введите текст"></textarea> <br>
-        <input type="submit" value="Отправить"> <br>
-        <input type="reset" value="Сбросить">
-        </p>
-    </form>
+            <p>
+               1.<label for="name">Имя</label> <input type="text" id="name">
+            </p>
+            <p>
+               2.<label for="phone">Телефон</label><input type="tel" id="phone">
+            </p>
+            <p>
+              3.<label for="email">Email</label> <input type="email" id="email">
+            </p>
+            <p>
+              4.<label for="password">Пароль</label> <input type="password" id="password">
+            </p>
+            <p>
+              5.<label for="auto">Какую машину Вы предпочитаете?</label>
+               <select id="auto">
+                 <option value="BMW">BMW</option>
+                 <option value="Mercedes-Bens">Mercedes-Bens</option>
+                 <option value="Audi">Audi</option>
+                 <option value="Volkswagen">Volkswagen</option>
+                 <option value="Peugeot">Peugeot</option>
+               </select>
+            </p>
+            <p>
+              <label for="volume"><strong>Объём :</strong> </label> <br>
+                <input list="volume-list" id="volume" name="volume">
+                  <datalist id="volume-list">
+                    <option value="2.0"></option>
+                    <option value="3.0"></option>
+                    <option value="4.0"></option>
+                </datalist> 
+           </p>
+           <p>
+              Диски будут : 
+               <input type="radio"  name="size1" value="R15"/> <i>R15</i>
+               <input type="radio" name="size1" value="R16"> <i>R16</i> 
+               <input type="radio" name="size1" value="R17"/> <i>R17 </i>
+               <input type="radio"  name="size1" value="R18"/> <i>R18 </i>
+           </p>
+           <p>
+              6.<label for="comments">Ваши пожелания : </label> <textarea id="comments"  placeholder="Введите текст"></textarea>
+           </p>
+           <p>
+              <input type="submit" value="Отправить">
+           </p>
+           <p>
+              <input type="reset" value="Сбросить">
+           </p>
+      </form>
     
 </body>
 </html>
